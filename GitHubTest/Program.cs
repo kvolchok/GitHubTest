@@ -11,7 +11,8 @@ public class Program
 
             Console.WriteLine("Выберите команду: \n" +
                               "1. Сложить числа \n" +
-                              "2. Вычесть числа \n");
+                              "2. Вычесть числа \n" + 
+                              "3. Умножить числа \n");
 
             var choice = Convert.ToInt32(Console.ReadLine());
 
@@ -27,6 +28,10 @@ public class Program
                 case 2:
                     var difference = firstNumber - secondNumber;
                     Console.WriteLine("Результат вычитания " + difference);
+                    break;
+                case 3:
+                    var product = firstNumber + secondNumber;
+                    Console.WriteLine("Результат умножения " + product);
                     break;
             }
         }
