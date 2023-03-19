@@ -10,10 +10,10 @@ public class Program
             var firstNumber = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Выберите команду: \n" +
-                              "1. Сложить числа \n" +
-                              "2. Вычесть числа \n" + 
-                              "3. Умножить числа \n" +
-                              "4. Поделить числа \n");
+                              "1. + \n" +
+                              "2. - \n" + 
+                              "3. * \n" +
+                              "4. / \n");
 
             var choice = Convert.ToInt32(Console.ReadLine());
 
