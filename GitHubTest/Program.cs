@@ -20,25 +20,30 @@ public class Program
             Console.WriteLine("Введите второе число:");
             var secondNumber = Convert.ToDouble(Console.ReadLine());
 
-            switch (choice)
-            {
-                case 1:
-                    var sun = firstNumber + secondNumber;
-                    Console.WriteLine("Результат сложения " + sun);
-                    break;
-                case 2:
-                    var difference = firstNumber - secondNumber;
-                    Console.WriteLine("Результат вычитания " + difference);
-                    break;
-                case 3:
-                    var product = firstNumber + secondNumber;
-                    Console.WriteLine("Результат умножения " + product);
-                    break;
-                case 4:
-                    var quotient = firstNumber - secondNumber;
-                    Console.WriteLine("Результат деления " + quotient);
-                    break;
-            }
+            CalculateOperation(choice, firstNumber, secondNumber);
+        }
+    }
+
+    private static void CalculateOperation(int choice, double firstNumber, double secondNumber)
+    {
+        switch (choice)
+        {
+            case 1:
+                var sun = firstNumber + secondNumber;
+                Console.WriteLine("Результат сложения " + sun);
+                break;
+            case 2:
+                var difference = firstNumber - secondNumber;
+                Console.WriteLine("Результат вычитания " + difference);
+                break;
+            case 3:
+                var product = firstNumber + secondNumber;
+                Console.WriteLine("Результат умножения " + product);
+                break;
+            case 4:
+                var quotient = firstNumber - secondNumber;
+                Console.WriteLine("Результат деления " + quotient);
+                break;
         }
     }
 }
